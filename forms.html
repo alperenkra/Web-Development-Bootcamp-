@@ -13,19 +13,19 @@
     <form action="/bmw">
         <p>
             <label for="username">Enter your username:</label>
-            <input type="text" placeholder="username" id="username">
+            <input type="text" placeholder="username" id="username" name="username">
         </p>
         <p>
             <label for="password">Enter your password:</label>
-            <input type="password" placeholder="password" id="password">
+            <input type="password" placeholder="password" id="password" name="password">
         </p>
         <p>
             <label for="color">Pick your color:</label>
-            <input type="color" id="color">
+            <input type="color" id="color" name="color">
         </p>
         <p>
             <label for="number">Enter your number:</label>
-            <input type="number" placeholder="enter a number" id="number">
+            <input type="number" placeholder="enter a number" id="number" name="num" min="1" max="1000">
         </p>
 
         <p>
@@ -43,8 +43,62 @@
         <input type="submit" value="Click Me!">
 
     </form>
+    <h2>Hijacking Searches</h2>
+
+    <h3>Search Youtube</h3>
+
+    <form action="https://www.youtube.com/results?search_query">
+        <input type="text" name="search_query">
+        <button>Search on Youtube</button>
+    </form>
+
+    <h3>Search Google</h3>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search on Google</button>
+    </form>
     <hr>
     <button>Outside Form</button>
+
+    <h2>More Inputs!</h2>
+    <form action="/fastest_cars.html">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <!--chechked or unchecked makes that checkbox default checked/unchecked-->
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="tractor">Please Choose Your Tractors Brand</label>
+            <select name="tractor" id="tractor">
+                <option value="empty">--Please Choose a Brand--</option>
+                <option value="johndeere">John Deere</option>
+                <option value="massey">Massey Ferguson</option>
+                <option value="fendt">Fendt</option>
+                <option value="newholland">New Holland</option>
+            </select>
+
+            <slider><!--bunu kendim uydurdum div yapmak yerine-->
+                <p>
+                    <label for="wheelsize">Wheel Size:</label>
+                    <input type="range" id="wheelsize" min="200" step="100" max="900" value="400" name="wheelsize">
+                </p>
+            </slider>
+        </p>
+        <p>
+            <label for="request">Any Special Requests?</label>
+            <br>
+            <textarea name="request" id="request" cols="50 " rows="10"
+                placeholder="Please Write Your Specil Request"></textarea>
+            <button>Submit</button>
+        </p>
+    </form>
 </body>
 
 </html>

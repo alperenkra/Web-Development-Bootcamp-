@@ -1,0 +1,15 @@
+/* this is the universal selector it is select everything in the document "*" */
+* {
+    color: pink;
+}
+
+/* this is element selector it is select every element that in same type*/
+button {
+    font-size: 30px;
+}
+
+/* it makes al h1,h2 */
+h1,
+h2 {
+    color: magenta;
+}

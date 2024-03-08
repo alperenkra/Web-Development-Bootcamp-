@@ -1,15 +1,56 @@
 /* this is the universal selector it is select everything in the document "*" */
-* {
-    color: pink;
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #edede9;
 }
+
 
 /* this is element selector it is select every element that in same type*/
 button {
     font-size: 30px;
+    background-color: #778da9;
 }
 
 /* it makes al h1,h2 */
 h1,
 h2 {
-    color: magenta;
+    color: #264653;
+}
+
+#signup {
+    background-color: #1b263b;
+    color: #fefae0;
+}
+
+span {
+    color: #4579bd;
+}
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+span a {
+    color: #4579bd;
+}
+
+footer a {
+    color: #e63946;
+}
+
+h2+button {
+    font-size: 20px;
+}
+
+footer>a {
+    color: green;
+}
+
+input {
+    color: greenyellow
 }

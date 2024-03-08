@@ -51,6 +51,14 @@ footer>a {
     color: green;
 }
 
-input {
+input[type="password"] {
     color: greenyellow
+}
+
+section[class="post"] {
+    background-color: magenta;
+}
+
+a[href*="google"] {
+    color: magenta;
 }
